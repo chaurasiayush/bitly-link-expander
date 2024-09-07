@@ -27,7 +27,7 @@ The **Bitly Link Expander** Chrome extension automatically detects `bit.ly` shor
 ### 2. Clone the Repository
 
 ```bash
-git clone https://github.com/
+git clone https://github.com/chaurasiayush/bitly-link-expander.git
 ```
 
 ### 3. Load the Extension into Chrome
