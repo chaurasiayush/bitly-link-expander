@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "Bitly Link Expander",
+    "version": "1.0",
+    "description": "Expand bit.ly links and replace them with their full URLs.",
+    "permissions": [
+      "scripting",
+      "activeTab",
+      "storage"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"],
+        "run_at": "document_end"
+      }
+    ],
+    "host_permissions": [
+      "<all_urls>"
+    ]
+  }
+  
