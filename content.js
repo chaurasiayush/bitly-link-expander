@@ -57,7 +57,11 @@ async function expandAndReplaceBitlyLinks() {
 
 chrome.storage.local.get(['bitlyAccessToken'], function(result) {
     BITLY_ACCESS_TOKEN = result.bitlyAccessToken;
-    console.log('Access token retrieved:');
+    if(!BITLY_ACCESS_TOKEN) {
+        console.error('Bitly Expander: Setup Bitly Access Token first');
+        return;
+    }
+    console.log('Access token retrieved');
     setTimeout(expandAndReplaceBitlyLinks, 10000);
 });
 

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitly Token Setup</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bitly Token Setup</h1>
+        <form id="tokenForm">
+            <label for="bitlyAccessToken">
+                Enter Bitly Access Token (generate <a href="https://app.bitly.com/settings/api/" target="_blank" rel="noopener">here</a>)
+            </label>
+            <input type="text" id="bitlyAccessToken" name="bitlyAccessToken" required>
+            <button type="submit">Save Token</button>
+            <button type="button" id="deleteTokenBtn">Delete Token</button>
+        </form>
+        <p id="statusMessage"></p>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>

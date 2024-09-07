@@ -35,14 +35,10 @@ git clone https://github.com/chaurasiayush/bitly-link-expander.git
 1. **Open Chrome** and go to `chrome://extensions/`.
 2. **Enable Developer Mode** by toggling the switch in the top right corner.
 3. **Click "Load unpacked"** and select the folder where you created your extension.
-4. The extension will be loaded, and the script will run on every page load.
-5. Run this script once to store your `ACCESS_TOKEN` in browser's `storage.local`.
+4. The extension will be loaded.
+5. click on the extension icon ![icon](assets/icon16.png)  to enter the api access token.
 
-```javascript
-chrome.storage.local.set({ bitlyAccessToken: 'YOUR_ACCESS_TOKEN' }, function() {
-    console.log('Access token stored securely.');
-});
-```
+    ![Bitly link expander popup](docs/image.png)
 
 ## Usage
 

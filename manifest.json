@@ -1,13 +1,25 @@
 {
     "manifest_version": 3,
     "name": "Bitly Link Expander",
-    "version": "1.0",
+    "author": {
+        "email": "uiet.ayush@gmail.com"
+    },
+    "version": "1.01",
     "description": "Expand bit.ly links and replace them with their full URLs.",
     "permissions": [
       "scripting",
       "activeTab",
       "storage"
     ],
+    "action": {
+        "default_popup": "popup/popup.html"
+    },
+    "icons": {
+        "16": "assets/icon16.png",
+        "32": "assets/icon32.png",
+        "48": "assets/icon48.png",
+        "128": "assets/icon128.png"
+    },
     "content_scripts": [
       {
         "matches": ["<all_urls>"],
